@@ -1,6 +1,6 @@
 module combinational_circuit(input [3:0] a, input [1:0] b, output reg c);
 
-initial
+  always@(a,b) //always@(*)
 begin
   case(b)
   2'b00:c=a[0];
